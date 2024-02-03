@@ -65,6 +65,14 @@
 
     <em>Hello world</em>
 
-    <img src="assests/html.png"  title="html" alt="html logo" width="500" height="500">
+    <img src="assests/images/html.png"  title="html" alt="html logo" width="500" height="500">
+
+    <!--3 picutres sizes large,medium,samll-->
+    <!-- we uee this picture tag in modern responsive web development -->
+    <picture>
+        <source media = "(min-width: 1000px)" srcset="assests/images/large.jpeg"> <!-- if min-width of the browser 1000 load this image -->
+        <source media = "(min-width: 800px)" srcset="assests/images/medium.jpeg"> <!-- when the width of the browser comes to 800 load this image -->
+        <img src="assests/images/small.jpeg" title="iphone-samll" alt="iphone"> <!-- when the width of the browser came down below 800px load this image -->
+    </picture>
 </body>
 </html>
