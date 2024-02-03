@@ -75,9 +75,17 @@
         <img src="assests/images/small.jpeg" title="iphone-samll" alt="iphone"> <!-- when the width of the browser came down below 800px load this image -->
     </picture>
 
-    <video controls autoplay loop muted> <!-- controls give controllers to the video, autoplay give the autoplaying facility and loop does loop the video countinousely-->
+    <video
+            controls
+            autoplay
+            loop
+            muted
+            poster="assests/images/msg.jpg"
+            width="700px" height="400px"> <!-- controls give controllers to the video, autoplay give the autoplaying facility and loop does loop the video countinousely and if the video doesn't play in the browser poster will cover the video-->
         <source src="assests/videos/car.mp4" type="video/mp4"> <!-- in the type attribute we need to specify the video type in the given way-->
-        <source src="assests/videos/car.webm" type="video/webm"> <!-- we upload a another type of the same video incase that the previous video file format does not support in the browser-->
+        <source src="assests/videos/car.webm" type="video/webm"><!-- we upload a another type of the same video incase that the previous video file format does not support in the browser-->
+        <track label="English" kind="subtitles" src="assests/sub/sample.vtt" srclang="en" default><!--adding subtitle to a video srclang means the language of the sub,label attribute means which sub is running now default does run default caption so we don't need to on the caption-->
+        <track label="Arabic" kind="subtitles" src="assests/sub/arabic.vtt" srclang="ar">
         Your browser does not support the video tag
     </video>
 </body>
