@@ -74,5 +74,11 @@
         <source media = "(min-width: 800px)" srcset="assests/images/medium.jpeg"> <!-- when the width of the browser comes to 800 load this image -->
         <img src="assests/images/small.jpeg" title="iphone-samll" alt="iphone"> <!-- when the width of the browser came down below 800px load this image -->
     </picture>
+
+    <video controls autoplay loop muted> <!-- controls give controllers to the video, autoplay give the autoplaying facility and loop does loop the video countinousely-->
+        <source src="assests/videos/car.mp4" type="video/mp4"> <!-- in the type attribute we need to specify the video type in the given way-->
+        <source src="assests/videos/car.webm" type="video/webm"> <!-- we upload a another type of the same video incase that the previous video file format does not support in the browser-->
+        Your browser does not support the video tag
+    </video>
 </body>
 </html>
