@@ -232,9 +232,72 @@
 
         <div>
             <label for="message">Message</label><br>
-            <textarea placeholder="Enter your message" id="message"></textarea>
+            <textarea 
+                    placeholder="Enter your message" 
+                    id="message" 
+                    rows="10" 
+                    cols="30">
+            </textarea>
         </div>
 
+        <br>
+       <!--select-->
+        <div>
+            <label for="language">Select your programming language</label><br>
+            <select name="" id="language">
+                <!--we have to give a value to the option-->
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="c">C</option>
+                <option value="c#">C#</option>
+            </select>
+        </div>
+
+        <br>
+
+        <!--Option group-->
+        <div>
+            <label for="tech">Select your Tech</label><br>
+            <select name="" id="tech">
+                <!--we have to give a value to the option-->
+                <optgroup label="Languages">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="c#">C#</option>
+                    <option value="c#">Go</option>
+                </optgroup>
+
+                <optgroup label="front-end frameworks">
+                    <option value="c#">React</option>
+                    <option value="c#">NextJs</option>
+                    <option value="c#">Angular</option>
+                    <option value="c#">VueJs</option>
+                </optgroup>
+
+                <optgroup label="back-end frameworks">
+                    <option value="c#">Spring</option>
+                    <option value="c#">Spring Boot</option>
+                    <option value="c#">ExpressJs</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <br>
+
+        <!--datalist(stores a datalist)-->
+        <div>
+            <input type="text" placeholder="Enter your country" list="countries">
+            <datalist id="countries">
+                <option value="sri lanka">Sri Lanka</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="uae">UAE</option>
+                <option value="japan">Japan</option>
+                <option value="russia">Russia</option>
+                <option value="china">China</option>
+            </datalist>
+        </div>
     </form>
 </body>
 </html>
