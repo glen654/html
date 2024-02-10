@@ -287,7 +287,8 @@
 
         <!--datalist(stores a datalist)-->
         <div>
-            <input type="text" placeholder="Enter your country" list="countries">
+            <label for="country-search">Country search</label><br>
+            <input type="text" id="country-search" placeholder="Enter your country" list="countries">
             <datalist id="countries">
                 <option value="sri lanka">Sri Lanka</option>
                 <option value="usa">USA</option>
@@ -298,6 +299,12 @@
                 <option value="china">China</option>
             </datalist>
         </div>
+
+        <br>
+
+        <!--gender radio button-->
+        <input type="radio" id="male" name="gender"><label for="male">Male</label>
+        <input type="radio" id="female" name="gender"><label for="female">Male</label>
     </form>
 </body>
 </html>
