@@ -327,10 +327,109 @@
     <br><br>
     <form oninput="result.value=parseInt(a.value) + parseInt(b.value)"><!--we use parseInt for convert a string value to a int value-->
         <input type="range" id="a" name="a" value="10">
-        hello
+        +
         <input type="number" id="b" name="b" value="20">
-        hi
+        =
         <output name="result">30</output><!--visible a output-->
     </form>
+
+    <section>
+        <h2>Inquires</h2>
+        <form>
+            <div>
+                <label for="firstname">First Name</label><br>
+                <input type="text" id="firstname" placeholder="Enter your firstname ">
+            </div>
+            <br>
+            <div>
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="lastname" placeholder="Enter your lastname ">
+            </div>
+            <br>
+            <div>
+                <label for="age">Age</label><br>
+                <input type="date" id="age">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" placeholder="Enter your name">
+            </div>
+            <br>
+            <div>
+                <label for="tel">Contact Number</label><br>
+                <input type="tel" id="tel" placeholder="07xxxxxxxx">
+            </div>
+            <br>
+            <div>
+                <label for="choose-program">Choose your program</label><br>
+                <select name="" id="choose-program">
+                    <optgroup label="Foundation">
+                        <option value="java">Foundation in IT</option>
+                        <option value="python">Foundation in Business Management</option>
+                    </optgroup>
+
+                    <optgroup label="diploma">
+                        <option value="c#">Diploma in It</option>
+                        <option value="c#">Diploma in Business Management</option>
+                    </optgroup>
+
+                    <optgroup label="HND">
+                        <option value="c#">HND in IT</option>
+                        <option value="c#">HND in Business Management</option>
+                    </optgroup>
+
+                    <optgroup label="Undergraduate">
+                        <option value="c#">Bachelor of IT</option>
+                        <option value="c#">Bachelor of commerce</option>
+                    </optgroup>
+
+                    <optgroup label="Postgraduate">
+                        <option value="c#">Msc IT</option>
+                        <option value="c#">MBA</option>
+                    </optgroup>
+
+                    <optgroup label="Doctorate">
+                        <option value="c#">DBA</option>
+                        <option value="c#">Phd in ICT</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="country-search">Your latest qualification level</label><br>
+                <input type="text" id="qualification-level" placeholder="Enter your qualification" list="levels">
+                <datalist id="levels">
+                    <option value="ol">O/L</option>
+                    <option value="al">A/L</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="degree">Degree</option>
+                    <option value="masters">Masters</option>
+                    <option value="phd">Phd</option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="message-text">Message</label><br>
+                <textarea
+                        placeholder="Enter your message"
+                        id="message-text"
+                        rows="10"
+                        cols="50">
+            </textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+    </section>
+
+    <!--Special characters-->
+    <p>
+       Hello&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.<!-- &nbsp is special character to give a space we have define a special character with colon-->
+    </p>
 </body>
 </html>
